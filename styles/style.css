@@ -33,6 +33,9 @@ header {
 }
 
 .nav-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: #131318;
     font-size: 36px;
     font-weight: 800;
@@ -136,6 +139,7 @@ header {
         padding: 10px;
         background-size: auto;
         border-radius: 8px;
+        margin-top: 15px;
     }
 
     .header-content-title{
