@@ -65,8 +65,8 @@ header {
 /* header content styles */
 
 .header-content {
-    height: 500px;
-    margin: 50px 0px 100px 0px;
+    height: 380px;
+    margin: 50px auto 100px auto;
     background-image: url('../Images/Group\ 13\ \(1\)\ \(1\).png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -126,8 +126,55 @@ select {
 }
 
 
+main {
+    width: 80%;
+    margin: auto;
+}
+
+.popularity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 100px; */
+}
+
+.popularity-content {
+    color: #424247;
+    width: 50%;
+}
+
+.popularity-content h1 {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0%;
+}
+
+.popularity-content p{
+    margin: 24px 0px ;
+}
+.popularity-content li{
+    margin-bottom: 16px;
+}
+
+.popularity-content button {
+    border: none;
+    border-radius: 8px;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 15px 30px;
+}
+
+.popularity img{
+    width: 100%;
+}
+
+
+
 @media screen and (max-width: 600px) {
-    header {
+    header, main {
         width: 95%;
     }
 
@@ -160,5 +207,14 @@ select {
     .inp-container {
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
+    }
+
+    .popularity{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .popularity-content{
+        width: auto;
     }
 }
