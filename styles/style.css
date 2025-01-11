@@ -304,6 +304,7 @@ main {
     gap: 24px;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .reason-box {
@@ -326,6 +327,81 @@ main {
     background: rgba(233, 68, 68, 0.05);
 }
 
+/* deals section styles */
+
+.deals-box {
+    width: 1170px;
+    margin: auto;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+.db1 {
+    background-image: url('../Images/Group\ 39.png');
+    display: flex;
+    justify-content: flex-start;
+}
+
+.db2 {
+    background-image: url('../Images/Group\ 40.png');
+    display: flex;
+    justify-content: flex-end;
+}
+
+.db3 {
+    background-image: url('../Images/Group\ 39.png');
+    display: flex;
+    justify-content: flex-start;
+}
+
+.deals-info-box {
+    width: 579px;
+    height: fit-content;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.80);
+    padding: 20px;
+}
+
+.info-bar{
+    display: flex;
+    gap: 24px;
+}
+
+.deals-info-box span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.deals-info-box h2 {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.deals-info-box p {
+    width: 452px;
+    font-size: 16px;
+}
+
+.deals-info-box h3 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.deals-info-box button {
+    border: none;
+    border-radius: 8px;
+    background: #FF5400;
+    padding: 12px 24px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 800;
+}
 
 @media screen and (max-width: 600px) {
 
@@ -404,7 +480,17 @@ main {
         border-radius: 16px;
     }
 
-    .reason-box{
+    .reason-box {
         height: fit-content;
+    }
+
+    .deals-box {
+        width: auto;
+        background-color: red;
+        background-size: auto;
+    }
+
+    .deals-info-box p{
+        width: auto;
     }
 }
