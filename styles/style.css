@@ -19,6 +19,20 @@ body {
     color: rgba(19, 19, 24, 0.70);
 }
 
+.section-title {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0%;
+}
+
+.section-description {
+    width: 643px;
+    margin: 24px auto 48px auto;
+    text-align: center;
+}
+
 /* header style s */
 
 header {
@@ -143,13 +157,6 @@ main {
     width: 50%;
 }
 
-.popularity-content h1 {
-    color: #131318;
-    font-size: 40px;
-    font-weight: 800;
-    margin: 0%;
-}
-
 .popularity-content p {
     margin: 24px 0px;
 }
@@ -172,18 +179,10 @@ main {
     width: 100%;
 }
 
-.destination-title {
-    color: #131318;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 800;
-    margin: 0%;
-}
+/* destination section styles */
 
-.destination-description {
-    width: 643px;
-    margin: 24px auto 48px auto;
-    text-align: center;
+.destination {
+    margin-bottom: 100px;
 }
 
 .destination-img-container img {
@@ -298,12 +297,50 @@ main {
     justify-content: center;
 }
 
+/* reason section styles */
+
+.reason-box-container {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.reason-box {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    width: 573px;
+    height: 284px;
+    padding: 20px;
+}
+
+.rb1 {
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.rb2 {
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.rb3 {
+    background: rgba(233, 68, 68, 0.05);
+}
+
+
 @media screen and (max-width: 600px) {
+
+    /* shared styles */
 
     header,
     main {
         width: 95%;
     }
+
+    .section-description {
+        width: auto;
+    }
+
+    /* header styles */
 
     .header {
         flex-direction: column;
@@ -353,10 +390,6 @@ main {
         font-size: 25px;
     }
 
-    .destination-description {
-        width: auto;
-    }
-
     .img-container-one,
     .img-container-two,
     .img-container-three {
@@ -369,5 +402,9 @@ main {
         width: 100%;
         background-size: cover;
         border-radius: 16px;
+    }
+
+    .reason-box{
+        height: fit-content;
     }
 }
