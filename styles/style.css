@@ -329,6 +329,8 @@ main {
 
 /* deals section styles */
 
+
+
 .deals-box {
     width: 1170px;
     margin: auto;
@@ -366,7 +368,7 @@ main {
     padding: 20px;
 }
 
-.info-bar{
+.info-bar {
     display: flex;
     gap: 24px;
 }
@@ -393,7 +395,9 @@ main {
     font-weight: 800;
 }
 
-.deals-info-box button {
+/* .deals-info-box button, */
+.deals button {
+    text-align: center;
     border: none;
     border-radius: 8px;
     background: #FF5400;
@@ -401,6 +405,11 @@ main {
     color: #FFFFFF;
     font-size: 20px;
     font-weight: 800;
+}
+
+.deals-button-container{
+    text-align: center;
+    /* margin-bottom: 100px; */
 }
 
 @media screen and (max-width: 600px) {
@@ -490,7 +499,7 @@ main {
         background-size: auto;
     }
 
-    .deals-info-box p{
+    .deals-info-box p {
         width: auto;
     }
 }
