@@ -547,6 +547,41 @@ main {
     margin: 0%;
 }
 
+/* footer styles  */
+
+footer {
+    background: rgba(19, 19, 24, 0.05);
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 32px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    padding-top: 110px;
+    margin-bottom: 0%;
+}
+
+.footer-description {
+    width: 769px;
+    margin: 15px auto 32px auto;
+}
+
+footer hr{
+    width: 50%;
+    margin-top: 50px;
+}
+
+footer .copy-txt{
+    margin-top: 50px;
+    padding-bottom: 110px;
+}
+
+
+
 @media screen and (max-width: 600px) {
 
     /* shared styles */
@@ -660,5 +695,9 @@ main {
         width: auto;
         height: auto;
         padding: 10px;
+    }
+
+    .footer-description{
+        width: auto;
     }
 }
