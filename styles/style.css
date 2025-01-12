@@ -262,14 +262,13 @@ main {
     width: 474px;
     height: 286px;
     display: flex;
-    align-items: centcolor: #131318;
+    align-items: center;
+    color: #131318;
     text-align: center;
-    font-family: Mulish;
     font-size: 24px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
-    er;
     justify-content: center;
 }
 
@@ -515,7 +514,7 @@ main {
     padding: 12px;
 }
 
-.form-content-two{
+.form-content-two {
     position: relative;
 }
 
@@ -538,11 +537,11 @@ main {
     font-weight: 400;
 }
 
-.discount-box p{
+.discount-box p {
     margin-bottom: 4px;
 }
 
-.discount-box h3{
+.discount-box h3 {
     font-size: 32px;
     font-weight: 800;
     margin: 0%;
@@ -657,7 +656,7 @@ main {
         gap: 20px;
     }
 
-    .discount-box{
+    .discount-box {
         width: auto;
         height: auto;
         padding: 10px;
