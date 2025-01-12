@@ -56,7 +56,9 @@ header {
 }
 
 .nav-bar {
-    /* display: flex; */
+    display: flex;
+    align-items: center;
+
 }
 
 .nav-bar ul {
@@ -108,7 +110,7 @@ header {
     margin: auto;
     padding: 16px;
     border-radius: 8px;
-    background: rgba(255, 255, 255, 0.30);
+    background: rgba(255, 255, 255, 0.40);
     /* background-color: red; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -322,7 +324,7 @@ main {
     padding: 20px;
 }
 
-.reason-box p{
+.reason-box p {
     margin: 0%;
 }
 
@@ -415,7 +417,8 @@ main {
 }
 
 /* .deals-info-box button, */
-.deals button {
+.deals button,
+.recommendation button {
     text-align: center;
     border: none;
     border-radius: 8px;
@@ -429,6 +432,38 @@ main {
 .deals-button-container {
     text-align: center;
     margin-bottom: 100px;
+}
+
+/* recommendation section styles */
+
+.recommendation {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.recommendation-content {
+    width: 535px;
+}
+
+.recommendation-title {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0%;
+}
+
+.recommendation-content p {
+    margin: 24px 0px;
+}
+
+.recommendation-content button {
+    margin-top: 32px;
+}
+
+.recommendation-img-container img {
+    width: 100%;
 }
 
 @media screen and (max-width: 600px) {
@@ -464,6 +499,7 @@ main {
     }
 
     .header-content-title {
+        background-size: 100%;
         font-size: 2.5rem;
     }
 
@@ -520,5 +556,17 @@ main {
 
     .deals-info-box p {
         width: auto;
+    }
+
+    .recommendation {
+        flex-direction: column;
+    }
+
+    .recommendation-content {
+        width: auto;
+    }
+
+    .recommendation-title {
+        text-align: center;
     }
 }
