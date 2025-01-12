@@ -466,6 +466,88 @@ main {
     width: 100%;
 }
 
+/* form section styles */
+
+.form {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.form-content {
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 40px;
+}
+
+.form-title {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0%;
+}
+
+.form-content p {
+    margin: 16px 0px 24px 0px;
+}
+
+.form-fill {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.form-fill input {
+    border: none;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    padding: 16px 20px;
+    margin-bottom: 16px;
+}
+
+.form-fill button {
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    color: #FFF;
+    padding: 12px;
+}
+
+.form-content-two{
+    position: relative;
+}
+
+.form-img-container img {
+    width: 100%;
+}
+
+.discount-box {
+    position: absolute;
+    width: 324px;
+    height: 120px;
+    transform: rotate(-19.628deg);
+    border-radius: 16px;
+    /* padding: 20px; */
+    bottom: 60px;
+    right: 15px;
+    text-align: center;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.discount-box p{
+    margin-bottom: 4px;
+}
+
+.discount-box h3{
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0%;
+}
+
 @media screen and (max-width: 600px) {
 
     /* shared styles */
@@ -568,5 +650,16 @@ main {
 
     .recommendation-title {
         text-align: center;
+    }
+
+    .form {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .discount-box{
+        width: auto;
+        height: auto;
+        padding: 10px;
     }
 }
